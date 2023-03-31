@@ -1,3 +1,5 @@
+/*
+1. Write a C program to sort array elements in descending order.*/
 #include<stdio.h>
 int main()
 {
@@ -25,7 +27,7 @@ return 0;
 
 
 
-/* Write a program Ascending order array elements
+/* 2. Write a C program to sort array elements in ascending order.
 */
 
 #include<stdio.h>
