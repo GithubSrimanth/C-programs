@@ -1,0 +1,40 @@
+/* Program to convert a decimal number to Binary*/
+#include<stdio.h>
+void convert(int);
+void main()
+{
+int n;
+printf("Enter decimal number: ");
+scanf("%d",&n);
+convert(n);
+}
+void convert(int n)
+{
+int a[100],i,rem;
+for(i=0;n!=0;i++)
+{
+rem=n%2;
+a[i]=rem;
+n=n/2;
+}
+printf("After convertion of decimal to binary num is: ");
+for(i=i-1;i>=0;i--)
+printf("%d",a[i]);
+}
+/*OUTPUT is: user@DESKTOP-IL6OQ24 ~/Cprograms
+$ gcc convertdecimaltobinary.c -o cdb
+
+user@DESKTOP-IL6OQ24 ~/Cprograms
+$ ./cdb
+Enter decimal number: 17
+After converted decimal to binary num10001
+user@DESKTOP-IL6OQ24 ~/Cprograms
+$ gcc convertdecimaltobinary.c -o db
+
+user@DESKTOP-IL6OQ24 ~/Cprograms
+$ ./db
+Enter decimal number: 25
+After convertion of decimal to binary num is: 11001
+user@DESKTOP-IL6OQ24 ~/Cprograms
+$
+*/
