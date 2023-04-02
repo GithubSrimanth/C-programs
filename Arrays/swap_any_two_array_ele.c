@@ -1,4 +1,4 @@
-/*C program to swap two array elements using pointers*/
+/*C program to swap any two array elements using pointers*/
 #include<stdio.h>
 int main()
 {
