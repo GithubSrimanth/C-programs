@@ -1,3 +1,4 @@
+/*Delete duplicates array elements*/
 #include<Stdio.h>
 int main()
 {
