@@ -1,4 +1,4 @@
-/*Delete duplicates array elements*/
+/*Write a C program to Delete duplicate elements from an array of integers*/
 #include<Stdio.h>
 int main()
 {
@@ -17,11 +17,10 @@ for(j=i+1;j<n;j++)
 {
 if(a[i]==a[j])
 {
-for(k=j;k<n;k++)
+for(k=j;k<n;k++)//   each and every elements are shifted one position to left from j+1 to j like this, for that we have taken k for loop. 
 {
-a[k]=a[k+1];
-}
-n--;
+a[k]=a[k+1];// a[j]=a[j+1] replaced with a[k]=a[k+1]
+n--;//size will be decrease
 j--;
 }
 }
