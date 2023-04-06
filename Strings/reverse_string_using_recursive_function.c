@@ -1,3 +1,4 @@
+/*Reverse the given string using recursive function */
 #include<stdio.h>
 #include<string.h>
 void reverse(char *a)//define the func reverse, here pass the array so, func parameter would be char pointer
