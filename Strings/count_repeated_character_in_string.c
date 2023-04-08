@@ -15,13 +15,19 @@ printf("\n %c character repeated =%d times",i,c[i]);
 }
 }
 
-/*OUTPUT IS: Enter a string: SSrrrrriiiiiii   mmmmmmaaaaanthhhh
+/*OUTPUT IS: Enter a string: Ssssssssrrrrrriiiii    mmmmmmaaaaaaaannnnntttthhhhhh@@@@@@2222222222444444
 
-   character repeated =3 times
- S character repeated =2 times
- a character repeated =5 times
- h character repeated =4 times
- i character repeated =7 times
+   character repeated =4 times
+ 2 character repeated =10 times
+ 4 character repeated =6 times
+ @ character repeated =6 times
+ a character repeated =8 times
+ h character repeated =6 times
+ i character repeated =5 times
  m character repeated =6 times
- r character repeated =5 times
+ n character repeated =5 times
+ r character repeated =6 times
+ s character repeated =7 times
+ t character repeated =4 times
+
 */
