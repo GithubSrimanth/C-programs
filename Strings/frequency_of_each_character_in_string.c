@@ -16,14 +16,16 @@ printf("\n %c repeated =%d times",i,c[i]);
 }
 
 
-/*OUTPUT IS: Enter a string: sssrrrrriimmmaanntttthhh
+/*OUTPUT IS:Enter a string: Ssssrrrrriimmmmmmaannnttttthhhhh
 
- a repeated =2 times
- h repeated =3 times
- i repeated =2 times
- m repeated =3 times
- n repeated =2 times
- r repeated =5 times
- s repeated =3 times
- t repeated =4 times
+ S character frequency is =1 times
+ a character frequency is =2 times
+ h character frequency is =5 times
+ i character frequency is =2 times
+ m character frequency is =6 times
+ n character frequency is =3 times
+ r character frequency is =5 times
+ s character frequency is =3 times
+ t character frequency is =5 times
+
 */
