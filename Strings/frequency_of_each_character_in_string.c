@@ -1,4 +1,4 @@
-/*Count frequency of each character or repeated character in string*/
+/*frequency of each character in string*/
 #include<stdio.h>
 void main()
 {
@@ -11,7 +11,7 @@ c[str[i]]++;
 for(i=0;i<123;i++)
 {
 if(c[i]!=0)
-printf("\n %c repeated =%d times",i,c[i]);
+printf("\n %c character frequency is =%d times",i,c[i]);
 }
 }
 
