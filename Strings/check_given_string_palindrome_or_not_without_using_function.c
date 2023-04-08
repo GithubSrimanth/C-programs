@@ -18,7 +18,11 @@ else
 printf("The Given string is not Palindrome");
 }
 
-/*OUTPUT IS: Enter a string: sreers
+/*OUTPUT IS: 
+Enter a string: sremers
+Given string is Palindrome
+
+Enter a string: sreers
 Given string is Palindrome
 user@DESKTOP-IL6OQ24 ~/Cprograms
 $ ./sp
