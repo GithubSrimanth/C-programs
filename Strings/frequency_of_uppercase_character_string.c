@@ -1,4 +1,4 @@
-/*Frequency of uppercase character string*/
+/*Frequency/repeated of uppercase character string*/
 #include<stdio.h>
 void main()
 {
