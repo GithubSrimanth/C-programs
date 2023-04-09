@@ -1,4 +1,4 @@
-/*print Sort the characters without repetition*/
+/*print all Sorted order/characters the given string without repetition*/
 #include<stdio.h>
 void main()
 {
