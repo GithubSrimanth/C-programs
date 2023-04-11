@@ -26,3 +26,9 @@ printf("%d",a[i]);
 }
 return 0;
 }
+
+
+
+/*OUTPUT IS: 
+Ascending order array ele's: 23569
+*/
