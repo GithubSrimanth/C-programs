@@ -32,3 +32,7 @@ printf("%d",a[i]);
 }
 return 0;
 }
+
+  
+  
+  /*OUTPUT IS: */
