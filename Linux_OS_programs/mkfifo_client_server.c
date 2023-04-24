@@ -1,4 +1,6 @@
+// Communication between two process using named pipe  or mkfifo () function.
 // Clients or sender process wants to send message to server or receiver process
+
 
 // 1.Sender/client program
 #include<stdio.h>
