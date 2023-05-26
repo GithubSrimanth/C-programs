@@ -22,4 +22,7 @@ str[j]=t;
 }
 }
 
-/*OUTPUT IS: */
+/*OUTPUT IS:
+Enter a string: srimanth gaddam
+maddag htnamirs
+*/
