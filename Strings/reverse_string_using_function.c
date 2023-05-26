@@ -9,7 +9,6 @@ gets(str);
 reverseString(str);
 printf("Reversed string: %s\n", str);
 }
-
 void reverseString(char str[])
 {
     int i,j,n,temp;
