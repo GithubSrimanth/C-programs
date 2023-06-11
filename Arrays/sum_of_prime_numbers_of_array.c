@@ -1,15 +1,15 @@
 /* Program to find sum of prime  numbers of array*/
 #include<stdio.h>
-int prime(int x)
+int prime(int num)
 {
 int i;
-if(x<2)
+if(num<2)
 {
 return 0;
 }
-for(i=2;i*i<=x;i++)
+for(i=2;i*i<=num;i++)
 {
-if(x%i==0)
+if(num%i==0)
 {
 return 0;
 }
