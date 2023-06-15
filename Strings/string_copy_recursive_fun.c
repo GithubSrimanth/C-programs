@@ -21,3 +21,5 @@ void str_copy(char s2[],char s1[],int i)
         str_copy(s2,s1,i+1);//recursion fun call
     }
 }
+/*NOTE:        // Recursive call to copy the next character
+*/
