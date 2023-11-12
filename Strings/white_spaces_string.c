@@ -19,6 +19,32 @@ int main()
     printf("After removed white spaces of string is: %s\n",str1);
 }
 
+or
+
+// with string library function
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[50];
+    int i,j;
+    printf("Enter a str is: \n");
+    gets(str);
+    int len = strlen(str);
+    for(i=0;i<len;i++)
+    {
+        if(str[i]!=' ')
+        {
+            str[j]=str[i];
+            j++;
+        }
+    }
+    str[j]='\0';
+
+    printf("After removed white spaces: %s", str);
+    return 0;
+}
+
 /*OUTPUT IS:
 After removed white spaces of string is: mynameissrimanth
 */
