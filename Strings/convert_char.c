@@ -35,3 +35,33 @@ fdhjfkjkdsgjSFHASDHFJDSFFDSJFJK
 Display the converted string is : FDHJFKJKDSGJsfhasdhfjdsffdsjfjk
 
 */
+
+
+// Convert upper case letters to lowercase letters using library function
+#include<stdio.h>
+#include<ctype.h>
+void convert(char *str)
+{
+    while(*str)
+    {
+        if(isupper(*str))
+        {
+            *str=tolower(*str);
+        }
+        else if(islower(*str))
+        {
+            *str=toupper(*str);
+        }
+        str++;
+    }
+}
+
+void main()
+{
+    char str[10];
+    printf("Enter a string: \n");
+    gets(str);
+    convert(str);
+    printf("After converted string is: %s\n", str);
+}
+
