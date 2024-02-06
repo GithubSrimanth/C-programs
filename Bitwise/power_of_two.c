@@ -1,4 +1,27 @@
-// Write a program to check an integer is a power of 2
+// Write a program to check an integer is a power of 2 using bitwise operators
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    // Input the integer
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Check if the number is a power of 2
+    if ((number > 0) && ((number & (number - 1)) == 0)) {
+        printf("%d is a power of 2.\n", number);
+    } else {
+        printf("%d is not a power of 2.\n", number);
+    }
+
+    return 0;
+}
+
+###################################################################################################
+
+
+// Here this is using General C program logic
 #include<stdio.h>
 #include<stdbool.h>
 bool ispoweroftwo(int num)
