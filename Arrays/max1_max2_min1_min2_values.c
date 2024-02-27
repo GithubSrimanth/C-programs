@@ -61,3 +61,50 @@ Enter array elements:
   
 1st largest value is: 56
 2nd largest value is: 45
+
+
+
+#############################################################################
+#include <stdio.h>
+#include <limits.h>
+
+void findSecondMinMax(int arr[], int size) {
+    int firstMin, secondMin, firstMax, secondMax;
+    firstMin = secondMin = INT_MAX; // Initialize to maximum possible value
+    firstMax = secondMax = INT_MIN; // Initialize to minimum possible value
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] < firstMin) {
+            secondMin = firstMin;
+            firstMin = arr[i];
+        } else if (arr[i] < secondMin && arr[i] != firstMin) {
+            secondMin = arr[i];
+        }
+
+        if (arr[i] > firstMax) {
+            secondMax = firstMax;
+            firstMax = arr[i];
+        } else if (arr[i] > secondMax && arr[i] != firstMax) {
+            secondMax = arr[i];
+        }
+    }
+
+    printf("Second smallest element: %d\n", secondMin);
+    printf("Second largest element: %d\n", secondMax);
+    printf("First Smallest element: %d\n", firstMin);
+    printf("First largest element: %d\n", firstMax);
+}
+
+int main() {
+    int arr[50];
+    int size;
+    printf("Enter array size: \n");
+    scanf("%d",&size);
+    printf("Enter array elements: \n");
+    for(int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+    findSecondMinMax(arr, size);
+
+    return 0;
+}
