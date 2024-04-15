@@ -3,6 +3,25 @@
 #include<string.h>
 void main()
 {
+    char str[9]="Srimanth";
+    int n=strlen(str);
+    int temp;
+    for(int i=0;i<n/2;i++)
+    {
+        temp=str[i];
+        str[i]=str[n-1-i];
+        str[n-1-i]=temp;
+    }
+    printf("After reversed the string is: %s\n", str);
+}
+/*OUTPUT IS: 
+After reversed the string is: htnamirS
+*/
+##################################################################################################
+#include<stdio.h>
+#include<string.h>
+void main()
+{
 char str[100];
 printf("Enter a string: ");
 gets(str);
