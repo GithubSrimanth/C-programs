@@ -1,4 +1,33 @@
 /*Reverse the given string using recursive function */
+
+// Reverse a string using recursion function
+#include<stdio.h>
+#include<string.h>
+int reverse(char str[], int i, int j)
+{
+    
+    if(i<j)
+   {
+        char temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+   
+   reverse(str, i+1, j-1);
+   }
+}
+
+int main()
+{
+    char str[50]="Srimanth";
+    int n= strlen(str);
+    reverse(str, 0, n-1);
+    printf("Reversed string is: %s", str);
+    return 0;
+}
+
+
+
+#############################################################################################################################
 #include <stdio.h>
 
 // Function to reverse a string using recursion
@@ -24,26 +53,7 @@ int main() {
     return 0;
 }
 
-#######################################################################################
-#include<stdio.h>
-#include<string.h>
-void reverse(char *a)//define the func reverse, here pass the array so, func parameter would be char pointer
-{
-if(*a)// to print upto the last char of the string input
-{
-reverse(a+1);// it will move to the next character
-printf("%c",*a);// it will print from the last
-}
-}
-int main()
-{
-char a[100];
-printf("Enter a string: ");
-//scanf("%[^\n]s",a);
-gets(a);
-reverse(a);//recursive func call
-return 0;
-} 
+
 
 /* OUTPUT IS: $ ./rs
 Enter a string: srimanth gaddam
