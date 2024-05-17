@@ -1,5 +1,36 @@
-/*C program to remove all duplicates/repeated from a given string
-*/
+// C program to remove all duplicates/repeated from a given string
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char str[50]="srimanth srimanth";
+    int n = strlen(str);
+    
+    for(int i=0;i<n;i++)
+    {
+        
+        for(int j=i+1;j<n;)
+        {
+            if(str[i]==str[j])
+            {
+                for(int k=j;k<n;k++)
+                {
+                    str[k]=str[k+1];
+                }
+                n--;
+            }
+            else
+            j++;
+            
+        }
+    }
+    printf("After removed duplicates the string is:%s\n",str);
+    
+}
+
+####################################################################################################
+
 #include<stdio.h>
 //#include<stdlib.h>
 #include<string.h>
