@@ -1,4 +1,5 @@
 // Reverse the alternate words given string
+
 #include <stdio.h>
 #include <string.h>
 
@@ -17,7 +18,7 @@ void reverse_alt_words(char *str) {
     char *ptr1 = str; // Pointer to the start of the current word
     char *ptr2= str;   // Pointer to traverse the string
 
-    while (*ptr2) {
+    while (*ptr2!='\0') {
         while (*ptr2 && *ptr2 != ' ') { // Move 'end' to the end of the current word
             ptr2++;
         }
@@ -25,7 +26,7 @@ void reverse_alt_words(char *str) {
             reverse_str(ptr1, ptr2 - 1);
         }
         wordCount++; // Increment word count
-        if (*ptr2) { // Move to the next word
+        if (*ptr2!='\0') { // Move to the next word
             ptr2++;
         }
         ptr1 = ptr2; // Set start to the beginning of the next word
@@ -41,6 +42,8 @@ int main() {
 
     return 0;
 }
+
+
 
 OUTPUT:
 Original string: My name is srimanth
