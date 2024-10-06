@@ -1,0 +1,41 @@
+// Example to understand the concept of static keyword importance in program
+
+Main.c file code:
+
+#include <stdio.h>
+void file1_myfun1(void);
+/*int mainPrivateData;/*this data is private to the  main.c, this main.c 
+expecting this data shouldn't be modified outside scope of this file. But in the file1.c we can modify that data*/
+static int mainPrivateData;// static won't allow to access or modify this data from another files
+int main()
+{
+    mainPrivateData = 100;
+    
+    printf("mainPrivateData = %d\n", mainPrivateData);
+    
+    file1_myfun1();
+    
+    printf("mainPrivateData = %d\n", mainPrivateData);
+
+    return 0;
+}
+
+
+
+File1.c file code:
+
+extern int mainPrivateData;/*we can modify the data by declaring the extern variable, if it should not modify this data
+then we should use static keyword for privacy or protecct the data from another developers/anyone*/
+void file1_myfun1(void)
+{
+    mainPrivateData= 900;
+}
+
+without static keyword output1:
+mainPrivateData = 100
+mainPrivateData = 900
+
+
+With Static keyword output2:
+
+undefined reference to mainPrivateData error
