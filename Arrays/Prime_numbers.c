@@ -47,3 +47,95 @@ Enter numbers
 9
 10
 Prime numbers up to 10 are: 2 3 5 7 
+
+
+
+    #########################################################################################
+    Another logics of Prime numbers
+#include<stdio.h>
+int isprime(int num)
+{
+    if(num<=1)
+    return 0;
+    for(int i=2;i*i<=num;i++)
+    {
+        if(num%i==0)
+        return 0;
+    }
+    return 1;
+}
+
+int main()
+{
+    int n, num;
+    printf("Enter range of values: \n");
+    scanf("%d", &n);
+    
+   for(int i=0;i<=n;i++)
+   {
+       printf("Enter a number: \n");
+       scanf("%d", &num);
+       if(isprime(num))
+       printf("%d is a Prime number\n", num);
+       else
+       printf("%d is not a Prime number\n", num);
+   }
+    return 0;
+}
+
+Output:
+Enter range of values: 
+5
+Enter a number: 
+0
+0 is not a Prime number
+Enter a number: 
+1
+1 is not a Prime number
+Enter a number: 
+2
+2 is a Prime number
+Enter a number: 
+3
+3 is a Prime number
+Enter a number: 
+4
+4 is not a Prime number
+Enter a number: 
+5
+5 is a Prime number
+
+
+/* Another logic*/
+#include<stdio.h>
+int isprime(int num)
+{
+    if(num<=1)
+    return 0;
+    for(int i=2;i*i<=num;i++)
+    {
+        if(num%i==0)
+        return 0;
+    }
+    return 1;
+}
+int main()
+{
+    int n;
+    printf("Enter range of values: \n");
+    scanf("%d", &n);
+    
+    printf("Prime numbers up to %d\n", n);
+    for(int i=2;i<=n;i++)
+    {
+        if(isprime(i))
+        printf("%d", i);
+    }
+    return 0;
+}
+
+output:
+Enter range of values: 
+5
+Prime numbers up to 5
+235
