@@ -12,7 +12,7 @@ for(i=0;i<n/2;i++)
 if(str[i]!=str[n-1-i])
 break;
 }
-if(i>=n/2)
+if(i>=n/2) //or we can write this condition for perfect logic if(i==n/2)
 printf("Given string is Palindrome");
 else
 printf("The Given string is not Palindrome");
