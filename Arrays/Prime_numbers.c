@@ -1,5 +1,45 @@
 // Print the prime numbers in  n number of integer values using c
 #include<stdio.h>
+int isprime(int n)
+{
+    if(n<2)
+    {
+        return 0;
+    }
+    else
+    for(int i=2;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void main()
+{
+    int arr[50];
+    int n;
+    printf("Enter a size: \n");
+    scanf("%d", &n);
+    
+    for(int i=0;i<n;i++)
+    {
+        printf("Enter a number: \n");
+        scanf("%d", &arr[i]);
+        if(isprime(arr[i]))
+        {
+            printf("%d Number is prime\n",arr[i]);
+        }
+        else
+        printf("%d Number is not prime\n", arr[i]);
+    }
+}
+
+
+###############################################################
+#include<stdio.h>
 int isprime(int num)
 {
     if(num<=1)
