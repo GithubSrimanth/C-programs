@@ -1,3 +1,33 @@
+// Sum of Even and Odd numbers logic in single code
+#include<stdio.h>
+void main()
+{
+    int arr[50];
+    int n,even=0,odd=0,sum1=0,sum2=0;
+    printf("Enter array size: \n");
+    scanf("%d", &n);
+    printf("Enter array elements: \n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            sum1 =sum1+ arr[i];
+        }
+        else if(arr[i]%2==1)
+        {
+            sum2 =sum2 + arr[i];
+        }
+    }
+    printf("Sum of Even numbers: %d\n", sum1);
+    printf("Sum of Odd numbers: %d\n", sum2);
+}
+
+########################################################
 /*Sum of even array elements*/
 #include<stdio.h>
 void main()
