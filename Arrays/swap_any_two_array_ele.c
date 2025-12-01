@@ -2,6 +2,30 @@
 #include<stdio.h>
 int main()
 {
+int a[50],i,n,temp;
+int *ptr = a;
+printf("Enter array size: ");
+scanf("%d",&n);
+printf("Enter array elements: ");
+for(i=0;i<n;i++)
+{
+scanf("%d", &ptr[i]); //a+i
+}
+temp = *(ptr+0);
+*(ptr+0)=*(ptr+1);
+*(ptr+1)=temp;
+printf("After swap array elements: ");
+for(i=0;i<n;i++)
+{
+printf("%d\t",ptr[i]);
+}
+}
+
+
+#####################################################################
+#include<stdio.h>
+int main()
+{
 int a[100],i,n,temp;
 printf("Enter array size: ");
 scanf("%d",&n);
