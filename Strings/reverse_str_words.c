@@ -18,7 +18,7 @@ int main()
 		if(str[i] == ' ')
 		{
 			str[i] = '\0';
-			printf("%s ", &(str[i]) + 1);	// or printf("%s ", str + i + 1);
+			printf("%s ", &(str[i]) + 1);	// or printf("%s ", str + i + 1); or //&str[i+1]
 		} 
 	}
 	printf("%s", str);
