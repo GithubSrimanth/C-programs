@@ -1,4 +1,43 @@
 // student details using structure pointers
+
+#include<stdio.h>
+#include<stdlib.h>
+struct student
+{
+    char name[20];
+    int roll;
+    float marks;
+};
+
+
+int main()
+{
+    struct student *std;
+    std=malloc(sizeof(std));
+    if(std==NULL)
+    {
+        printf("Memory is not allocated\n");
+        return 0;
+    }
+    printf("Enter a student name: \n");
+    scanf("%s", std->name);
+    printf("Enter student roll number:\n");
+    scanf("%d", &std->roll);
+    printf("Enter student marks: \n");
+    scanf("%f", &std->marks);
+    
+    printf("Student details: \n");
+    
+    printf("Student name is: %s\n", std->name);
+    printf("Student Roll number is: %d\n", std->roll);
+    printf("Student Marks: %f\n", std->marks);
+    free(std);
+    std=NULL;
+    return 0;
+}
+
+or
+###################################################################################################
 #include<stdio.h>
 #include<stdlib.h>
     struct student
